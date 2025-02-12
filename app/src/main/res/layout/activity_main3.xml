@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context=".MainActivity3">
+
+
+<TextView
+    android:id="@+id/skipButton"
+    android:layout_width="91dp"
+    android:layout_height="58dp"
+    android:layout_marginBottom="12dp"
+    android:fontFamily="@font/font"
+    android:padding="16dp"
+    android:text="Skip"
+    android:textColor="@color/primaryclr"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toTopOf="@+id/healthImage"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.958"
+    app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/healthImage"
+        android:layout_width="349dp"
+        android:layout_height="469dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/fe2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/infoCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/light_green"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/healthImage">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="201dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Description Text -->
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Daily Health Tips"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- App Description -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/font"
+                android:text="Welcome to HealthMate! Get daily health tips and reminders to stay active, eat well, and live a healthier life. Stay on track with advice designed just for you!."
+                android:textSize="14sp" />
+
+            <!-- Progress Indicator and Button Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Progress Indicators -->
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/lighrgreen" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/green" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="4dp"
+                    android:background="@color/light_gray" />
+
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="200dp"
+                android:background="@drawable/circle_button"
+                android:padding="12dp"
+                android:src="@drawable/ic_arrow_right" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgclr"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ruser"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvGreeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hi, Hapsan"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvMorning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good Morning"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="80dp"
+                    android:layout_weight="1"
+                    android:gravity="end">
+
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Srilanka"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Colombo"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivLocationIcon"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/ic_location"
+                    android:layout_gravity="center_vertical" />
+
+
+
+                <ImageView
+                    android:id="@+id/ivNotification"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_notification"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/search_box_bg"
+            android:drawableStart="@drawable/ic_search"
+            android:hint="Eg : Doctor Appoinment"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="12dp" />
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="417dp"
+            android:layout_height="203dp"
+            android:src="@drawable/banner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HealthMate Features"
+                android:fontFamily="@font/font"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.401">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Fitness Program -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/bmi"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:contentDescription="Fitness Program"
+                        android:src="@drawable/fitness" />
+
+                    <TextView
+                        android:layout_width="173dp"
+                        android:padding="2dp"
+                        android:fontFamily="@font/font"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="Find Your BMI"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="stay healthy"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/font2"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Mental Wellness -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/wellness"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:contentDescription="Mental Wellness"
+                        android:src="@drawable/mental_wellness" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:fontFamily="@font/font"
+                        android:textStyle="bold"
+                        android:text="Mental Wellness"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mindfulness and Therapy"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/font2"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Nutrition Guidance -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:contentDescription="Nutrition Guidance"
+                        android:src="@drawable/nutrition" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:fontFamily="@font/font"
+                        android:textStyle="bold"
+                        android:text="Nutrition Guidance"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Healthy Eating Tips"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/font2"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:contentDescription="Assign A Doctor"
+                        android:src="@drawable/assdoc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nutrition Guidance"
+                        android:padding="2dp"
+                        android:fontFamily="@font/font"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/font2"
+                        android:text="Assign doctor anytime"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_marginTop="13dp"
+            android:layout_width="417dp"
+            android:layout_height="203dp"
+            android:src="@drawable/banner2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Doctors "
+                android:fontFamily="@font/font"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/doctor_card"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <include layout="@layout/doctor_card"/>
+
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintStart_toStartOf="parent" />
+        <include layout="@layout/doctor_card"/>
+
+    </LinearLayout>
+</ScrollView>
